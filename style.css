@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #927dfc;
+}
+
+.wrapper {
+  width: 450px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 9px;
+}
+
+.wrapper .upload-box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border: 2px dashed #afafaf;
+}
+
+.upload-box p {
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+
+.active .upload-box {
+  border: none;
+}
+.active .upload-box p {
+  display: none;
+}
+.active .upload-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.wrapper .upload-box img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+.wrapper .content {
+  margin-top: 28px;
+}
+.content .row {
+  display: flex;
+  justify-content: space-between;
+}
+.content .row .column {
+  width: calc(100% / 2 - 15px);
+}
+.row .column label {
+  font-size: 1.06rem;
+}
+.sizes .column input {
+  width: 100%;
+  height: 49px;
+  outline: none;
+  border-radius: 4px;
+  margin-top: 7px;
+  padding: 0 15px;
+  font-size: 1.06rem;
+  border: 1px solid #aaa;
+}
+.sizes .column input:focus {
+  border: 2px solid #927dfc;
+  padding: 0 14px;
+}
+
+.content .checkboxes {
+  margin-top: 20px;
+}
+
+.checkboxes .column {
+  display: flex;
+  align-items: center;
+}
+.checkboxes .column input {
+  width: 17px;
+  height: 17px;
+  accent-color: #927dfc;
+  margin-right: 9px;
+}
+.content .download-btn {
+  width: 100%;
+  padding: 15px 0;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.06rem;
+  cursor: pointer;
+  margin: 30px 0 10px;
+  background: #927dfc;
+  text-transform: uppercase;
+}
